@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="log4j-web-2.3-javadoc">
+    <CLASSES>
+      <root url="jar://E:/Carl/Downloads/Dev Environment/apache-log4j-2.3-bin/log4j-web-2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Carl/Downloads/Dev Environment/apache-log4j-2.3-bin/log4j-web-2.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Carl/Downloads/Dev Environment/apache-log4j-2.3-bin/log4j-web-2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

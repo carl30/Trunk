@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="off" monitorInterval="1800">
+
+       <properties>
+              <property name="PROJECT_HOME">D:\Dev\CarlMavenTest\Trunk</property>
+              <property name="LOG_HOME">logs</property>
+              <property name="FILE_NAME">trunk-log</property>
+       </properties>
+
+       <Appenders>
+              <Console name="Console" target="SYSTEM_OUT">
+                     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+              </Console>
+
+              <RollingRandomAccessFile name="running-log"
+                                       fileName="${PROJECT_HOME}/${LOG_HOME}/${FILE_NAME}.log" filePattern="${PROJECT_HOME}/${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+                     <PatternLayout
+                             pattern="%date{yyyy-MMM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+                     <Policies>
+                            <TimeBasedTriggeringPolicy />
+                            <SizeBasedTriggeringPolicy size="10 MB" />
+                     </Policies>
+                     <DefaultRolloverStrategy max="20" />
+              </RollingRandomAccessFile>
+       </Appenders>
+
+       <Loggers>
+              <Logger name="com.carlcorp" level="trace"
+                      additivity="true">
+                     <AppenderRef ref="running-log" />
+              </Logger>
+              <Root level="error">
+                     <AppenderRef ref="Console" />
+              </Root>
+       </Loggers>
+</Configuration>

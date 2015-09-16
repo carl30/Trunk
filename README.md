@@ -8,6 +8,3 @@ to your project root.
 
 <h2>placeholder</h2>
 placeholder
-
-fix 1st
-fix 2nd

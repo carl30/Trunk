@@ -13,3 +13,6 @@ hs_err_pid*
 
 # Tomcat logs
 logs/
+
+# Intellij IDE files
+Trunk.iml

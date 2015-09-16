@@ -16,3 +16,4 @@ logs/
 
 # Intellij IDE files
 Trunk.iml
+.idea/

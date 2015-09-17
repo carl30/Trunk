@@ -1,8 +1,5 @@
 package com.carlcorp.model;
 
-/**
- * Created by jiajunhe on 2015/9/11.
- */
 public class User {
     private Integer id;
     private String name;

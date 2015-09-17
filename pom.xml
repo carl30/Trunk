@@ -12,6 +12,8 @@
         <fastxml.jackson.version>2.6.1</fastxml.jackson.version>
         <freemarker.version>2.3.23</freemarker.version>
         <apache.log4j.version>2.3</apache.log4j.version>
+        <junit.version>4.11</junit.version>
+        <spring.aspects.version>4.1.1.RELEASE</spring.aspects.version>
     </properties>
 
     <dependencies>
@@ -80,7 +82,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -100,6 +102,14 @@
             <artifactId>log4j-web</artifactId>
             <version>${apache.log4j.version}</version>
         </dependency>
+
+        <!-- Spring AOP -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.aspects.version}</version>
+        </dependency>
+
 
     </dependencies>
 

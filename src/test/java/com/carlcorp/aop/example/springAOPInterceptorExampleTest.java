@@ -2,10 +2,10 @@ package com.carlcorp.aop.example;
 
 import com.carlcorp.model.User;
 import com.carlcorp.service.useractivities.UserLoginService;
-import org.junit.Before;
-import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class springAOPInterceptorExampleTest {
     protected ApplicationContext applicationContext;
     protected UserLoginService userLoginService;
 
-    @Before
+    @BeforeClass
     public void setup() {
         this.applicationContext = new  ClassPathXmlApplicationContext(CONFIG_PATH);
         this.userLoginService = (UserLoginService)applicationContext.getBean("userLoginService");

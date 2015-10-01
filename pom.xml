@@ -1,3 +1,7 @@
+<!--
+  ~ Copyright (c) 2015 Carl Ho
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -12,8 +16,9 @@
         <fastxml.jackson.version>2.6.1</fastxml.jackson.version>
         <freemarker.version>2.3.23</freemarker.version>
         <apache.log4j.version>2.3</apache.log4j.version>
-        <junit.version>4.11</junit.version>
         <spring.aspects.version>4.1.1.RELEASE</spring.aspects.version>
+        <junit.version>4.11</junit.version>
+        <testng.version>6.1.1</testng.version>
     </properties>
 
     <dependencies>
@@ -30,6 +35,11 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
         <!-- Servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -79,6 +89,12 @@
         </dependency>
 
         <!-- Test -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

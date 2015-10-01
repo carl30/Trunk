@@ -17,7 +17,6 @@
         <freemarker.version>2.3.23</freemarker.version>
         <apache.log4j.version>2.3</apache.log4j.version>
         <spring.aspects.version>4.1.1.RELEASE</spring.aspects.version>
-        <junit.version>4.11</junit.version>
         <testng.version>6.1.1</testng.version>
     </properties>
 
@@ -93,12 +92,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 

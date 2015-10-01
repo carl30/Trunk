@@ -11,7 +11,7 @@ A basic web structure
 - Spring MVC 4.1.1.RELEASE
 - log4j2 2.3
 - Freemarker 2.3.23
-- Junit 4.11
+- TestNG 6.1.1
 - Spring AOP 4.1.1.RELEASE
 - Fastxml.jackson 2.6.1
 

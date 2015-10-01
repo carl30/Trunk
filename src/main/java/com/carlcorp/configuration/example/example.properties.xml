@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2015 Carl Ho
+  -->
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Configuration system. The first word in the key property is the main key value. Then we could add a '?'
+        mark and start to add some parameters after this key. Use 'and' to separate parameters.
+        Usage: key="exampleKey ? param1=value1 and param2=value2"
+    </comment>
+    <entry key="testEntry">test entry text</entry>
+    <entry key="url"></entry>
+    <entry key="url?locale=en_us">http://www.softwaresummit.com/</entry>
+    <entry key="url ? locale=en_au and id=1">http://marxsoftware.blogspot.com/</entry>
+    <entry key="url.javaworld">http://www.javaworld.com/</entry>
+    <entry key="url.otn">http://www.oracle.com/technology/index.html</entry>
+</properties>

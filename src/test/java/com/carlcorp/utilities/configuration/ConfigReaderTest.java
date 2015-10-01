@@ -5,9 +5,9 @@
 package com.carlcorp.utilities.configuration;
 
 import org.apache.commons.lang3.StringUtils;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.Properties;
 
@@ -16,7 +16,7 @@ public class ConfigReaderTest {
     private ConfigReader configReader;
     private String fileName;
 
-    @Before
+    @BeforeClass
     public void setup() {
         configReader = new ConfigReader();
         this.fileName = "example";

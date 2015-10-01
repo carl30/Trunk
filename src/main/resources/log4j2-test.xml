@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2015 Carl Ho
+  -->
+
 <Configuration status="off" monitorInterval="1800">
 
     <properties>
@@ -26,12 +30,11 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.carlcorp.*" level="trace"
-                additivity="true">
-            <AppenderRef ref="running-log"/>
+        <Logger name="com.carlcorp" level="debug" additivity="true">
+            <AppenderRef ref="Console" level="debug"/>
         </Logger>
-        <Root level="error">
-            <AppenderRef ref="Console"/>
+        <Root level="warn">
+            <AppenderRef ref="running-log" level="warn"/>
         </Root>
     </Loggers>
 </Configuration>

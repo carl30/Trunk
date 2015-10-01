@@ -1,3 +1,7 @@
+<!--
+  ~ Copyright (c) 2015 Carl Ho
+  -->
+
 <web-app version="2.4"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
@@ -75,24 +79,5 @@
 		<location>/content/views/404.ftl</location>
 	</error-page>
 	<!-- Error pages end -->
-
-	<!-- Apache log4j2 -->
-	<listener>
-		<listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
-	</listener>
-
-	<filter>
-		<filter-name>log4jServletFilter</filter-name>
-		<filter-class>org.apache.logging.log4j.web.Log4jServletFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>log4jServletFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-		<dispatcher>FORWARD</dispatcher>
-		<dispatcher>INCLUDE</dispatcher>
-		<dispatcher>ERROR</dispatcher>
-	</filter-mapping>
-	<!-- log4j2 end -->
 
 </web-app>
